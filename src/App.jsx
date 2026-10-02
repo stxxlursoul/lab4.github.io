@@ -117,7 +117,7 @@ export default function App() {
           <Row align="middle" justify="space-between" gutter={[8, 8]}>
             <Col xs={24} md={12}>
               <Flex align="center" gap={15} className="brand-flex">
-                <img src="/logo.png" alt="Логотип" className="logo-img" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Логотип" className="logo-img" />
                 <span className="site-title">Языки программирования</span>
               </Flex>
             </Col>
@@ -148,7 +148,7 @@ export default function App() {
                 <li><Link href="https://kubsu.ru/">КубГУ через https</Link></li>
                 <li>
                   <a href="https://www.java.com/ru/">
-                    <img src="/image.png" alt="Цветок" className="flower-img" />
+                    <img src={`${import.meta.env.BASE_URL}image.png`} alt="java" className="flower-img" />
                   </a>
                 </li>
                 <li><Link href="inside_page.html">Сокращенная ссылка на внутреннюю страницу</Link></li>
@@ -174,7 +174,7 @@ export default function App() {
                 </li>
                 <li>
                   <img
-                    src="/krugkvad.png"
+                    src={`${import.meta.env.BASE_URL}krugkvad.png`}
                     useMap="#map"
                     alt="Картинка с областями"
                     className="map-image"
